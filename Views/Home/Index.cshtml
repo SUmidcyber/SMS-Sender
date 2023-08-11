@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="my-5">
+
+    <form method="post" asp-action="Send" asp-controller="Home">
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="phoneNumber" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div asp-validation-summary="ModelOnly"></div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+</div>
